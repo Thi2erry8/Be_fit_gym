@@ -1,0 +1,604 @@
+/*                              FONT                                                           */
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/*                                 General                                                     */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-color: hsla(0, 0%, 100%,1);
+}
+li{
+    font-family:"Roboto";
+    font-size: 1.2em;
+}
+nav{
+    width: 40%;
+     display: flex;
+     justify-content: center;
+}
+.nav_menu{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100%;
+}
+nav ul li{
+    font-weight: 600;
+}
+nav ul li a{
+    color: #0077B6;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display:block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition:  0.3s ease-in-out ;
+    background-color: #0077B6;
+}
+/*                                       MAIN                                              */
+
+/*                                       HERO                                              */
+.hero{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/hero_3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blur{
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+.hero_text{
+    margin-left: -10px;
+    z-index: 2;
+    color: white;
+    width: 50%;
+}
+.hero_text h1{
+    font-size: 4em;
+    font-family: "Kodchasan";
+}
+.hero_text p{
+    font-family: "Roboto";
+    font-size: 1.2em;
+}
+/*                                      ABOUT_US                                  */
+.about_us{
+    font-family: "Roboto";
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.about_us .container{
+    display: flex; 
+    flex-direction: row;
+     width:50%;
+     height: 60%;
+     margin-top: 25px;
+    margin-right: -10px;
+}
+.about_us_text{
+    width: 70%;
+    color: white;
+    margin-left: 15px;
+    color: black;
+    font-size: 1.2em;
+}
+.coach{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    align-items: center;
+    margin-top: 10px;
+}
+.coach_img img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+}
+.coach_text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto";
+    margin-left: 5px;
+    padding: 20px 0 20px 0;
+}
+.coach_text p{
+    font-weight: 750;
+}
+
+/*                                                   OUR CLASSES                             */
+.our_classes{
+    font-family: "Roboto";
+    background-color: #0077B6;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our_classes .container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 50px;
+
+}
+.classes{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 80%;
+    background-color: white;
+    border-radius: 5px;
+}
+.classes_img img{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+}
+.classes_text{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 10px;
+    gap: 25px;
+}
+/*                                              PLAN                                     */
+.plan{
+    font-family: "Roboto";
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.plan .container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 70px;
+
+}
+.plan_card{
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        height: 80%;
+        background-color: #0077B6;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 10%;
+}
+/*                                             IMB                               */
+.IBM{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.IBM_container{
+    display: flex;
+    flex-direction: column;
+    font-family:"Roboto";
+}
+.IBM_title{
+    font-size: 2em;
+    color: #0077B6;
+    margin-bottom: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form_info{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+.form_info div{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #0077B6; 
+    width: 49%;
+    padding: 5px;
+    height: 1.5em;
+    justify-content: space-between;
+}
+.form_info div input{
+    border: none;
+    background: transparent;
+    outline:none;
+}
+.form_info div input::-webkit-outer-spin-button, 
+.form_info div input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+#calculate_message{
+    position: absolute;
+    transform: translateY(1rem);
+}
+button{
+    width: 99%;
+    background-color: #0077B6;
+    color: white;
+    border: none;
+    height: 3em;
+    cursor: pointer;
+}
+
+
+/*                                           FOOTER            ;                  */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    background-image: url("../img/Footer_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.black_filter{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 70vh;
+    background-color: hsla(0, 0%, 0%, 0.8);
+}
+footer .container{
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    align-items:start;
+    justify-content: space-around;
+}
+.footer_list{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    justify-content: start;
+}
+.footer_items{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+.footer_items a , .social a{
+    color: white; 
+}
+.footer_items a:hover , .social a:hover{
+      color: #0077B6;
+}
+.title{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    font-size: 2em;
+    margin-bottom: 10px;  
+}
+.title p{
+    border-bottom: 3px solid #0077B6 ; 
+}
+.icon {
+    font-size: 2.5em;
+} 
+.icon_row{
+    display: flex;
+     flex-direction: row; 
+     gap: 1em;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    /* border: 3px solid #0077B6 ; */ 
+    background-color: hsla(0, 0%, 50%,0.5);
+    border-radius: 50%;
+}
+.social a{
+     font-size: 1.5em;
+}
+/*                                  RESPONSIVE                             */
+@media(max-width:1025px) {
+    /*Hero*/
+    .hero{
+        justify-content: center;
+    }
+    /*About us*/
+    .about_us{
+        justify-content: space-around;
+        height: 70vh;
+    }
+    .about_us .container{
+        width:95%;
+        justify-content: space-evenly;
+    } 
+    .about_us .container .img_box{
+        width:30%;
+    }
+    .about_us_text{
+        gap: 30px;
+        width: 50%;
+    }
+    .about_us_text{
+        display: flex;
+        flex-direction: column;
+    }
+    .coach_text{
+        width: 50%;
+    }
+    /*Our classes*/
+    .our_classes{
+        height: 85vh;
+    }
+    .classes{
+        height: 65%;
+    }
+    /*OUR PLAN*/
+    .plan{
+        height: 80vh;
+    }
+    .plan_card{
+        height: 60%; 
+        width: 25%;
+    }
+    /*IBM*/
+    .IBM{
+        height: 60vh;
+    }
+    /**/
+    footer{
+        height: 50vh;
+    }
+    .black_filter{
+        height: 50vh;
+    }
+    footer .container{
+        width: 90%;
+    }
+
+    
+
+}
+
+@media(max-width:769px) {
+    /*Header*/
+   
+   nav{
+    position: fixed;
+    left: 100%;
+    top: 59px;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+   }
+   .nav_menu{
+    flex-direction: column;
+   }
+   .nav_menu li{
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+   }
+   nav.active{
+    left: 0;
+    opacity: 1;
+   }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+         opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg); 
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);  
+    }
+    /*               ABOUT US                   */
+    .about_us{
+        justify-content: space-around;
+        height: 100vh;
+    }
+    .about_us .container{
+        margin: 0;
+    } 
+    .about_us .container .img_box{
+        width:30%;
+    }
+    .about_us .container .img_box{
+        width:30%;
+        height: 70%;
+    }
+    .about_us_text{
+        gap:5px;
+        width: 45%;
+    }
+    /*                 OUR CLASSES                   */
+    .our_classes{
+        height: 100vh;
+    }
+    .classes{
+        width: 25%;
+        height: 55%;
+    }
+    .classes_text{
+        gap:0px;
+        padding: 0 0 0 5px;
+    }
+    /*                     OUR PLAN                 */
+    .plan{
+        height: 100vh;
+    }
+    .plan_card{
+        height: 50%; 
+        width: 25%;
+    }
+    /*                    IBM                       */
+    .IBM{
+        height: 100vh;
+    }
+
+    /*                FOOTER                        */
+    footer{
+        height: 50vh;
+    }
+    .black_filter{
+        height: 50vh;
+    }
+    footer .container{
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+/*                     ABOUT US                      */
+    .about_us{
+        justify-content: space-around;
+        height: 100vh;
+
+    }
+    .about_us .container .img_box{
+       display: none;
+    }
+    .about_us .container{
+        flex-direction: column;
+        height: 100%;
+        gap:25px;
+    } 
+    .about_us_text{
+        gap:5px;
+        width: 100%;
+    }
+    /*                  OUR CLASSES                  */
+    .our_classes{
+        height: fit-content;
+        padding: 10px 0 30px 0;
+    }
+    .our_classes .container{
+           margin-top: 25px;
+           flex-direction: column;
+           width: 100%;
+           gap: 15px;
+           height: fit-content;
+    }
+    .classes{
+        width: 200px;
+        height: 100%;
+    }
+    .classes_text{
+        gap:0px;
+        padding: 0 0 0 5px;
+    }
+    /*                 OUR PLAN                      */
+    
+    .plan{
+        height: 250vh;
+    }
+    .plan .container{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+       /*  gap: 70px; */
+    
+    }
+    .plan_card{
+        height: 430px; 
+        width: 60%;
+        justify-content: space-evenly;
+    }
+    /*                    IBM                        */
+    .IBM_container{
+        width: 95%;
+    }
+    .form_info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    .form_info div {
+        width: 100%;
+
+    }
+    /*                  FOOTER                       */
+    footer{
+        height: 100vh;
+    }
+    .black_filter{
+        height: 100vh;
+    }
+    footer .container{
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
+}
