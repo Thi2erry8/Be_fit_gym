@@ -589,10 +589,10 @@ footer .container{
     }
     /*                  FOOTER                       */
     footer{
-        height: fit-content;
+        height: 110vh;
     }
     .black_filter{
-        height: 107%;
+        height: 110vh;
     }
     footer .container{
         width: 90%;
