@@ -2,7 +2,7 @@
 const calculateForm = document.getElementById('calculate_form'),
       calculateCm = document.getElementById('calculate_cm'),
       calculateKg = document.getElementById('calculate_kg'),
-      calculateMessage = document.getElementById('calculate_message')
+      calculateMessage = document.getElementById('calculate_message');
 
 const calculateBMI = (e) =>{
       e.preventDefault()
@@ -42,3 +42,37 @@ hamburger.addEventListener('click', () =>{
     hamburger.classList.toggle("active");
     nav.classList.toggle("active");
 })
+/*             Sticky header                  */
+const header = document.querySelector('header') ;
+function stickyHeader(){
+    if(window.scrollY >= 90){
+        header.classList.add('sticky');
+    }else{
+        header.classList.remove('sticky');
+    }
+}
+window.addEventListener('scroll',stickyHeader);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.querySelector('footer');
+    const black_filter = document.querySelector('.black_filter');
+
+    if (footer && black_filter) {
+        const updateHeight = () => {
+            black_filter.style.height = `${footer.offsetHeight}px`;
+        };
+
+        updateHeight(); // Appliquer une première fois
+
+        new ResizeObserver(updateHeight).observe(footer);
+    }
+});
+
+/*  const footer = document.querySelector('footer');
+ const black_filter = document.querySelector('.black_filter');
+ const FHeight = footer.offsetHeight;
+ footer.offsetHeight= black_filter.offsetHeight;
+
+console.log(black_filter.offsetHeight)
+console.log( footer.offsetHeight) */
+
