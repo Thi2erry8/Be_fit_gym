@@ -68,11 +68,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-/*  const footer = document.querySelector('footer');
- const black_filter = document.querySelector('.black_filter');
- const FHeight = footer.offsetHeight;
- footer.offsetHeight= black_filter.offsetHeight;
-
-console.log(black_filter.offsetHeight)
-console.log( footer.offsetHeight) */
 

@@ -388,11 +388,12 @@ footer .container{
    nav{
     position: fixed;
     left: 100%;
-    top: 59px;
+    top: 56px;
     width: 100%;
     background-color: white;
     opacity: 0;
     transition: 0.5s ease-in-out;
+    border-radius: 5px;
    }
    .nav_menu{
     flex-direction: column;
@@ -406,6 +407,9 @@ footer .container{
     left: 0;
     opacity: 1;
    }
+   header.sticky nav{
+    background-color: var(--color7);
+}
     .hamburger{
         display: block;
     }
@@ -474,6 +478,15 @@ footer .container{
     }
 }
 @media(max-width:600px){
+    /*HERO*/
+    .hero_text h1{
+        font-size: 3em;
+        font-family: "Kodchasan";
+    }
+    .hero_text p{
+        font-family: "Roboto";
+        font-size: 1em;
+    }
 /*                     ABOUT US                      */
     .about_us .container .img_box{
        display: none;
